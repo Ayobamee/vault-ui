@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  --brand:          #2B586B;
+  --brand-dark:     #1e3f4e;
+  --brand-light:    #3a7a93;
+  --brand-tint:     #EBF4F7;
+  --brand-tint-mid: #D0E5EE;
+  --bg:             #FFFFFF;
+  --surface:        #F8FAFB;
+  --card:           #FFFFFF;
+  --border:         #E2E8EC;
+  --border-brand:   #D0E5EE;
+  --text:           #0F2830;
+  --muted:          #6B7280;
+  --subtle:         #9CA3AF;
+  --green:          #16a34a;
+  --red:            #dc2626;
+  --amber:          #ca8a04;
+  --green-tint:     #DCFCE7;
+  --red-tint:       #FEE2E2;
+  --amber-tint:     #FEF9C3;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+body { background: var(--bg); color: var(--text); font-family: 'Space Grotesk', sans-serif; min-height: 100vh; line-height: 1.5; }
+#root { min-height: 100vh; display: flex; flex-direction: column; }
+input, select, textarea, button { font-family: 'Space Grotesk', sans-serif; }
+.mono { font-family: 'JetBrains Mono', monospace; }
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: var(--surface); }
+::-webkit-scrollbar-thumb { background: var(--border-brand); border-radius: 2px; }
+
+@keyframes fadeUp    { from { opacity:0; transform:translateY(14px); } to { opacity:1; transform:translateY(0); } }
+@keyframes fadeIn    { from { opacity:0; } to { opacity:1; } }
+@keyframes spin      { to { transform:rotate(360deg); } }
+@keyframes slideDown { from { opacity:0; transform:translateY(-8px); } to { opacity:1; transform:translateY(0); } }
+@keyframes pulse     { 0%,100% { opacity:1; box-shadow:0 0 0 0 rgba(43,88,107,.35); } 50% { opacity:.8; box-shadow:0 0 0 4px rgba(43,88,107,0); } }
+
+.fade-up    { animation: fadeUp    .3s ease forwards; }
+.fade-in    { animation: fadeIn    .2s ease forwards; }
+.slide-down { animation: slideDown .2s ease forwards; }

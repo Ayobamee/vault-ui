@@ -1,0 +1,28 @@
+.root { min-height:100vh; display:flex; align-items:center; justify-content:center; background:var(--surface); padding:24px; }
+.loginWrap { width:100%; max-width:420px; }
+.brand { text-align:center; margin-bottom:32px; }
+.brandIcon { font-size:40px; display:block; margin-bottom:10px; color:var(--brand); }
+.brandName { font-size:28px; font-weight:700; letter-spacing:-.5px; color:var(--brand); }
+.brandTag  { color:var(--muted); font-size:14px; margin-top:4px; }
+.card { background:var(--card); border:1px solid var(--border); border-top:3px solid var(--brand); border-radius:14px; padding:36px; width:100%; box-shadow:0 2px 12px rgba(43,88,107,.06); }
+.header { text-align:center; margin-bottom:28px; }
+.icon  { font-size:36px; margin-bottom:12px; }
+.title { font-size:20px; font-weight:700; color:var(--text); }
+.sub   { color:var(--muted); font-size:14px; margin-top:6px; }
+.hint  { color:var(--brand); font-size:12px; margin-top:4px; }
+.label { display:block; font-size:12px; color:var(--muted); font-weight:500; margin-bottom:6px; text-transform:uppercase; letter-spacing:.5px; }
+.input { width:100%; padding:12px 14px; background:var(--bg); border:1.5px solid var(--border); border-radius:10px; color:var(--text); font-size:14px; outline:none; margin-bottom:16px; transition:border-color .2s; }
+.input:focus { border-color:var(--brand); }
+.error { color:var(--red); font-size:13px; margin-bottom:14px; padding:10px 12px; background:var(--red-tint); border-radius:8px; border:1px solid #fecaca; }
+.btn { width:100%; padding:13px; border-radius:10px; font-size:15px; font-weight:600; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:8px; transition:all .2s; border:none; margin-top:4px; }
+.btn--primary { background:var(--brand); color:#fff; }
+.btn--primary:hover:not(:disabled) { background:var(--brand-dark); }
+.btn--primary:disabled { opacity:.5; cursor:not-allowed; }
+.btn--ghost { background:transparent; color:var(--muted); border:1px solid var(--border); margin-top:10px; font-size:13px; }
+.btn--ghost:hover { color:var(--brand); border-color:var(--brand-tint-mid); background:var(--brand-tint); }
+.otpRow { display:flex; gap:10px; justify-content:center; margin-bottom:24px; }
+.otpBox { width:52px; height:58px; text-align:center; font-size:22px; font-weight:700; background:var(--surface); border:1.5px solid var(--border); border-radius:10px; color:var(--text); outline:none; transition:border-color .2s; }
+.otpBox:focus { border-color:var(--brand); }
+.otpBox--filled { border-color:var(--brand); background:var(--brand-tint); }
+.creds { margin-top:24px; padding:14px; background:var(--brand-tint); border:1px solid var(--brand-tint-mid); border-radius:10px; font-size:12px; color:var(--muted); line-height:1.8; }
+@media (max-width:480px) { .card { padding:24px 20px; } .otpBox { width:44px; height:50px; font-size:18px; } }
