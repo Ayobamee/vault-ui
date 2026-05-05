@@ -1,0 +1,19 @@
+{
+  "name": "vaultx-e2e",
+  "version": "1.0.0",
+  "description": "Playwright E2E tests for VaultX UI",
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:auth": "playwright test tests/auth.spec.js",
+    "test:transfer": "playwright test tests/transfer.spec.js",
+    "test:history": "playwright test tests/history.spec.js",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0"
+  }
+}
