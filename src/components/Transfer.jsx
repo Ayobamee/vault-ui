@@ -47,10 +47,7 @@ export default function Transfer({ wallets, onTransfer }) {
     if (type === 'send' && !address.trim()) {
       e.address = 'Recipient address is required'
     } else if (type === 'send') {
-      const isValid =
-        /^(0x[a-fA-F0-9]{40}|[123][a-km-zA-HJ-NP-Z1-9]{25,34}|[A-Z0-9]{32,44})$/.test(
-          address.trim(),
-        )
+      const isValid = /^[a-zA-Z0-9]{25,62}$/.test(address.trim())
       if (!isValid) {
         e.address =
           'Invalid recipient address — must be a valid crypto wallet address (e.g. 0x...)'
